@@ -53,24 +53,85 @@
 		<button type="button" class="btn btn-danger btn-lg">Danger</button>
 
 	</div>
-<div class="col-xs-8 col-md-4 profile-picture">
+<div class="container">
 
-	<img src="moi.jpg" alt="salah" class="img-rounded">
+	<img src="moi.jpg" alt="salah" class="rounded-circle">
 
 </div>
 <div class="container">
-	<div class="dropdown">
-		<button type="button" class="btn btn-success dropdown-toggle " data-toggle="dropdown">Fruits <span class="caret"></span></button>
-		<ul class="dropdown-menu">
-			<li><a href="#">Banane</a></li>
-			<li><a href="#">Pomme</a></li>
-			<li><a href="#">Poire</a></li>
-			<li><a href="#">Orange</a></li>
-		</ul>
+	<div class="dropdown show">
+		<a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Dropdown link
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+		</div>
+	</div>
+	<!-- Example split danger button -->
+	<div class="btn-group">
+		<button type="button" class="btn btn-success">Action</button>
+		<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span class="sr-only">Toggle Dropdown</span>
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
 	</div>
 </div>
 <div class="progress" style="margin: 50px">
-	<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width: 70%">70%</div>
+	<div class="progress-bar bg-success progress-bar-striped progress-bar-animated " role="progressbar" style="width: 70%">70%</div>
+</div>
+<div class="container" style="margin: 40px">
+	<div id="monCarousel" class="carousel slide" data-ride="carousel" style="max-width: 800px">
+		<ol class="carousel-indicators">
+			<li data-target="#monCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#monCarousel" data-slide-to="1" ></li>
+			<li data-target="#monCarousel" data-slide-to="2" ></li>
+			<li data-target="#monCarousel" data-slide-to="3" ></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="1.jpg">
+				<div class="carousel-caption">
+					<h3>La premier image </h3>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="2.jpg">
+				<div class="carousel-caption">
+					<h3>La premier image </h3>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="3.jpg">
+				<div class="carousel-caption">
+					<h3>La premier image </h3>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="4.jpg">
+				<div class="carousel-caption">
+					<h3>La premier image </h3>
+				</div>
+			</div>
+		</div>
+
+		<a href="#monCarousel" class="left carousel-control" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#monCarousel" class="right carousel-control" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+
+
+	</div>
 </div>
 
 
